@@ -8,8 +8,8 @@ import {
   TwitterIcon,
   TwitterShareButton,
 } from "next-share";
-import { PROFILE_IMAGE_LOCATION, SITE_NAME } from "../lib/constants";
 
+import { PROFILE_IMAGE_LOCATION, SITE_NAME } from "../lib/constants";
 import CoverImage from "./CoverImage";
 import DateFormatter from "./DateFormatter";
 import PostTitle from "./PostTitle";
@@ -53,37 +53,25 @@ const PostHeader = ({
         </span>
 
         <div className="ml-4 mt-2 sm:ml-8 hover:opacity-60">
-          <FacebookShareButton
-            title={title}
-            url={shareUrl}
-          >
+          <FacebookShareButton title={title} url={shareUrl}>
             <FacebookIcon size={28} bgStyle={{ fill: "#a0aec0" }} />
           </FacebookShareButton>
         </div>
 
         <div className="ml-2 mt-2 hover:opacity-70">
-          <LinkedinShareButton 
-            title={title}
-            url={shareUrl}
-          >
+          <LinkedinShareButton title={title} url={shareUrl}>
             <LinkedinIcon size={28} bgStyle={{ fill: "#a0aec0" }} />
           </LinkedinShareButton>
         </div>
 
         <div className="ml-2 mt-2 hover:opacity-70">
-          <TwitterShareButton
-            title={title}
-            url={shareUrl}
-          >
+          <TwitterShareButton title={title} url={shareUrl}>
             <TwitterIcon size={28} bgStyle={{ fill: "#a0aec0" }} />
           </TwitterShareButton>
         </div>
 
         <div className="ml-2 mt-2 hover:opacity-70">
-          <EmailShareButton 
-            subject={title}
-            url={shareUrl}
-          >
+          <EmailShareButton subject={title} url={shareUrl}>
             <EmailIcon size={28} bgStyle={{ fill: "#a0aec0" }} />
           </EmailShareButton>
         </div>
