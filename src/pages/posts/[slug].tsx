@@ -38,6 +38,8 @@ export default function Post({ post }: Props) {
               <Head>
                 <title>{post.title + " | " + SITE_NAME}</title>
                 <meta property="og:image" content={post.ogImage.url} />
+                <meta property='og:title' content={post.title} />
+                <meta property='og:description' content={post.excerpt} />
               </Head>
               <Section>
                 <PostHeader
