@@ -8,8 +8,8 @@ import {
   TwitterIcon,
   TwitterShareButton,
 } from "react-share";
-import { PROFILE_IMAGE_LOCATION, SITE_NAME } from "../lib/constants";
 
+import { PROFILE_IMAGE_LOCATION, SITE_NAME } from "../lib/constants";
 import CoverImage from "./CoverImage";
 import DateFormatter from "./DateFormatter";
 import PostTitle from "./PostTitle";

@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { SUBSCRIBER_REQUEST_URL } from "../lib/constants";
 
+import { SUBSCRIBER_REQUEST_URL } from "../lib/constants";
 import { LoadingButton } from "./LoadingButton";
 
 const SubscribeForm = () => {

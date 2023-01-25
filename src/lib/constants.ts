@@ -3,8 +3,7 @@ export const SITE_URL = "https://localhost:3000";
 export const COPYRIGHT = "Jacob Orshalick";
 
 export const HERO_TITLE = "Personal Site Starter";
-export const HERO_SUBTITLE =
-  "Built with Next.js and AWS.";
+export const HERO_SUBTITLE = "Built with Next.js and AWS.";
 
 export const PROFILE_IMAGE_LOCATION = "/assets/author/orshalick.jpg";
 export const PROFILE_ABOUT_TEXT =
@@ -19,4 +18,4 @@ export const PERSONAL_BLOG_SOURCE_CODE =
   "https://github.com/jorshali/personal-blog";
 
 export const HOME_OG_IMAGE_URL = PROFILE_IMAGE_LOCATION;
-export const SUBSCRIBER_REQUEST_URL = '';
+export const SUBSCRIBER_REQUEST_URL = "";
