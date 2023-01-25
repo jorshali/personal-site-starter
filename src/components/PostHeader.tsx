@@ -7,9 +7,9 @@ import {
   LinkedinShareButton,
   TwitterIcon,
   TwitterShareButton,
-} from "react-share";
-
+} from "next-share";
 import { PROFILE_IMAGE_LOCATION, SITE_NAME } from "../lib/constants";
+
 import CoverImage from "./CoverImage";
 import DateFormatter from "./DateFormatter";
 import PostTitle from "./PostTitle";
@@ -52,21 +52,41 @@ const PostHeader = ({
           <DateFormatter dateString={date} />
         </span>
 
-        <FacebookShareButton
-          className="ml-4 sm:ml-8 hover:opacity-60"
-          url={shareUrl}
-        >
-          <FacebookIcon size={28} bgStyle={{ fill: "#a0aec0" }} />
-        </FacebookShareButton>
-        <LinkedinShareButton className="ml-2 hover:opacity-70" url={shareUrl}>
-          <LinkedinIcon size={28} bgStyle={{ fill: "#a0aec0" }} />
-        </LinkedinShareButton>
-        <TwitterShareButton className="ml-2 hover:opacity-70" url={shareUrl}>
-          <TwitterIcon size={28} bgStyle={{ fill: "#a0aec0" }} />
-        </TwitterShareButton>
-        <EmailShareButton className="ml-2 hover:opacity-70" url={shareUrl}>
-          <EmailIcon size={28} bgStyle={{ fill: "#a0aec0" }} />
-        </EmailShareButton>
+        <div className="ml-4 mt-2 sm:ml-8 hover:opacity-60">
+          <FacebookShareButton
+            title={title}
+            url={shareUrl}
+          >
+            <FacebookIcon size={28} bgStyle={{ fill: "#a0aec0" }} />
+          </FacebookShareButton>
+        </div>
+
+        <div className="ml-2 mt-2 hover:opacity-70">
+          <LinkedinShareButton 
+            title={title}
+            url={shareUrl}
+          >
+            <LinkedinIcon size={28} bgStyle={{ fill: "#a0aec0" }} />
+          </LinkedinShareButton>
+        </div>
+
+        <div className="ml-2 mt-2 hover:opacity-70">
+          <TwitterShareButton
+            title={title}
+            url={shareUrl}
+          >
+            <TwitterIcon size={28} bgStyle={{ fill: "#a0aec0" }} />
+          </TwitterShareButton>
+        </div>
+
+        <div className="ml-2 mt-2 hover:opacity-70">
+          <EmailShareButton 
+            subject={title}
+            url={shareUrl}
+          >
+            <EmailIcon size={28} bgStyle={{ fill: "#a0aec0" }} />
+          </EmailShareButton>
+        </div>
       </div>
 
       <div className="mb-8 md:mb-16 sm:mx-0">

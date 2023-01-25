@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { LinkedinIcon } from "react-share";
+import { LinkedinIcon } from "next-share";
 
 import {
   PROFILE_GITHUB,

@@ -24,7 +24,7 @@
     "next": "^13.1.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-share": "^4.4.1",
+    "next-share": "^0.19.0",
     "remark": "^14.0.2",
     "remark-html": "^15.0.1",
     "styled-jsx-plugin-postcss": "^4.0.1",
