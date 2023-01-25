@@ -33,6 +33,12 @@ yarn create next-app --example https://github.com/jorshali/personal-site-starter
 pnpm create next-app --example https://github.com/jorshali/personal-site-starter personal-site-starter-app
 ```
 
+Now you can simply run:
+
+```bash
+npm run dev
+```
+
 Your personal site should be up and running on [http://localhost:3000](http://localhost:3000)! If it doesn't work, post on [GitHub discussions](https://github.com/jorshali/personal-site-starter/discussions).
 
 # Notes

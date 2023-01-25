@@ -60,7 +60,13 @@ Start by running [`create-next-app`](https://github.com/vercel/next.js/tree/cana
 
 `npx create-next-app --example https://github.com/jorshali/personal-site-starter personal-site-starter-app`
 
-Once this completes, your personal site starter should be up and running on [http://localhost:3000](http://localhost:3000)!
+Once this completes, simply run:
+
+```bash
+npm run dev
+```
+
+Now your personal site starter should be up and running on [http://localhost:3000](http://localhost:3000)!
 
 ## Customize the project
 
