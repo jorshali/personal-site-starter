@@ -29,6 +29,6 @@
   @apply underline;
 }
 
-.markdown code {
-  @apply break-words;
+.markdown pre {
+  @apply overflow-scroll;
 }
