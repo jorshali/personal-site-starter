@@ -58,7 +58,9 @@ Now let's get started.
 
 Start by running [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init):
 
-`npx create-next-app --example https://github.com/jorshali/personal-site-starter personal-site-starter-app`
+```
+npx create-next-app --example https://github.com/jorshali/personal-site-starter personal-site-starter-app
+```
 
 Once this completes, simply run:
 
