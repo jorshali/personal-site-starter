@@ -95,7 +95,7 @@ Now let's see how the new blog posts can be added in the `_posts` directory.
 All blog posts are stored in `/_posts` as Markdown files.  If you're unfamiliar with the Markdown format you can [learn about it here](https://www.markdownguide.org/basic-syntax/).  The Markdown is converted to HTML and displayed to the page.
 
 The metadata of every post is handled by [`gray-matter`](https://github.com/jonschlinkert/gray-matter) and also sent in props to the page.  
-As an example, here is the markdown (with metdata) and the associated page.
+As an example, [here is the markdown](https://github.com/jorshali/personal-site-starter/blob/main/_posts/nextjs-and-aws-amplify-host-a-personal-blog-in-under-30-minutes.md?plain=1) (with metdata) for the post your reading now.
 
 You'll see examples in the starter, but you should define the following at the top of every markdown file:
 
