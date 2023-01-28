@@ -18,4 +18,5 @@ export const PERSONAL_BLOG_SOURCE_CODE =
   "https://github.com/jorshali/personal-blog";
 
 export const HOME_OG_IMAGE_URL = PROFILE_IMAGE_LOCATION;
+export const SUBSCRIBE_ENABLED = true;
 export const SUBSCRIBER_REQUEST_URL = "";

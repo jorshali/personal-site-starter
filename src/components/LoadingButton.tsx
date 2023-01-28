@@ -17,41 +17,15 @@ const LoadingButton = (props: Props) => {
   };
 
   const btnClass = className({
-    btn: true,
-    "btn-xl": props.xl,
-    "btn-base": !props.xl,
-    "btn-primary": true,
-    "animate-pulse": processing,
-    "cursor-pointer": true,
+    "inline-block rounded-md text-center text-white bg-primary-500 cursor-pointer hover:bg-primary-600": true,
+    "font-extrabold text-xl py-4 px-6": props.xl,
+    "text-lg font-semibold py-2 px-4": !props.xl,
+    "animate-pulse": processing
   });
 
   return (
     <div className={btnClass} onClick={handleClick}>
       {props.children}
-
-      <style jsx>
-        {`
-          .btn {
-            @apply inline-block rounded-md text-center;
-          }
-
-          .btn-base {
-            @apply text-lg font-semibold py-2 px-4;
-          }
-
-          .btn-xl {
-            @apply font-extrabold text-xl py-4 px-6;
-          }
-
-          .btn-primary {
-            @apply text-white bg-primary-500;
-          }
-
-          .btn-primary:hover {
-            @apply bg-primary-600;
-          }
-        `}
-      </style>
     </div>
   );
 };

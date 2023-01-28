@@ -31,4 +31,13 @@
 
 .markdown pre {
   @apply overflow-scroll;
+  @apply bg-gray-200;
+  @apply px-2;
+  @apply py-2;
+}
+
+.markdown blockquote {
+  @apply bg-gray-600;
+  @apply px-2;
+  @apply text-white;
 }

@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { SUBSCRIBE_ENABLED } from "../lib/constants";
 
 import { SubscribeForm } from "./SubscribeForm";
 
@@ -15,7 +16,7 @@ const HeroOneButton = (props: Props) => {
       </h1>
       <div className="text-2xl mt-4 mb-12">{props.description}</div>
 
-      <SubscribeForm />
+      { SUBSCRIBE_ENABLED ? <SubscribeForm /> : null }
     </header>
   );
 };

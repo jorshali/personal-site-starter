@@ -4,7 +4,7 @@ import Layout from "../components/Layout";
 import PoweredBy from "../components/PoweredBy";
 import { Section } from "../components/Section";
 import { UnsubscribeForm } from "../components/UnsubscribeForm";
-import { HERO_TITLE, SITE_NAME } from "../lib/constants";
+import { HERO_TITLE, SITE_NAME, SUBSCRIBE_ENABLED } from "../lib/constants";
 
 export default function Unsubscribe() {
   return (
@@ -15,7 +15,7 @@ export default function Unsubscribe() {
         </Head>
 
         <Section>
-          <UnsubscribeForm />
+          { SUBSCRIBE_ENABLED ? <UnsubscribeForm /> : null }
         </Section>
       </Layout>
 
