@@ -17,10 +17,11 @@ const LoadingButton = (props: Props) => {
   };
 
   const btnClass = className({
-    "inline-block rounded-md text-center text-white bg-primary-500 cursor-pointer hover:bg-primary-600": true,
+    "inline-block rounded-md text-center text-white bg-primary-500 cursor-pointer hover:bg-primary-600":
+      true,
     "font-extrabold text-xl py-4 px-6": props.xl,
     "text-lg font-semibold py-2 px-4": !props.xl,
-    "animate-pulse": processing
+    "animate-pulse": processing,
   });
 
   return (

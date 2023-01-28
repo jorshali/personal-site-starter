@@ -5,9 +5,7 @@ type Props = {
 };
 
 const IconList = (props: Props) => (
-  <div className="footer-icon-list flex flex-wrap">
-    {props.children}
-  </div>
+  <div className="footer-icon-list flex flex-wrap">{props.children}</div>
 );
 
 export { IconList };

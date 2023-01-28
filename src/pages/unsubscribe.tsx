@@ -14,9 +14,7 @@ export default function Unsubscribe() {
           <title>{`${SITE_NAME} | ${HERO_TITLE}`}</title>
         </Head>
 
-        <Section>
-          { SUBSCRIBE_ENABLED ? <UnsubscribeForm /> : null }
-        </Section>
+        <Section>{SUBSCRIBE_ENABLED ? <UnsubscribeForm /> : null}</Section>
       </Layout>
 
       <PoweredBy />

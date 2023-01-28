@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
-import { SUBSCRIBE_ENABLED } from "../lib/constants";
 
+import { SUBSCRIBE_ENABLED } from "../lib/constants";
 import { SubscribeForm } from "./SubscribeForm";
 
 type Props = {
@@ -16,7 +16,7 @@ const HeroOneButton = (props: Props) => {
       </h1>
       <div className="text-2xl mt-4 mb-12">{props.description}</div>
 
-      { SUBSCRIBE_ENABLED ? <SubscribeForm /> : null }
+      {SUBSCRIBE_ENABLED ? <SubscribeForm /> : null}
     </header>
   );
 };
