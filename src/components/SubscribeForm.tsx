@@ -8,7 +8,7 @@ const SubscribeForm = () => {
   const [email, setEmail] = useState("");
 
   const onSubscribe = async () => {
-    const url = new URL(SUBSCRIBER_REQUEST_URL);
+    const url = new URL(`${SUBSCRIBER_REQUEST_URL}`);
 
     const headers = {
       "Content-Type": "application/json",
