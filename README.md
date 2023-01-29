@@ -70,7 +70,7 @@ You can use the [aws-subscribers](https://github.com/jorshali/aws-subscribers) p
 
 # Contributions welcome
 
-Whether you would like to enhance the site starter, or simply post a link to your site build with the starter, your contribution is welcome.  Simply submit a pull request.  To feature your site, simply add it to this README in your pull request.
+Contributions are certainly welcome!  Whether you would like to enhance the site starter, or feature your site that was built with the starter, simply submit a pull request.  To feature your site, simply add it to this README in the pull request.
 
 # Notes
 
