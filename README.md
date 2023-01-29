@@ -13,9 +13,18 @@ To create the blog posts we use [`remark`](https://github.com/remarkjs/remark) a
 
 [https://jacoborshalick.me](https://jacoborshalick.me/)
 
-## Deploy your own
+## Performance
 
-Deploy the example using [AWS Amplify]().
+The site gets a near perfect [Lighthouse](https://developer.chrome.com/en/docs/lighthouse/) score so you can expect your site to be extremely performant.
+
+![Lighthouse Score](/assets/images/lighthouse_score.png "Lighthouse score for https://jacoborshalick.me")
+
+## Deploy with AWS Amplify
+
+You can deploy the `personal-site-starter` using [AWS Amplify](https://aws.amazon.com/amplify/).  A complete tutorial can be found here:
+
+[Host a portfolio site with Next.js and AWS in under 30 minutes](https://jacoborshalick.me/posts/nextjs-and-aws-amplify-host-a-personal-blog-in-under-30-minutes)
+
 
 ## How to use
 
