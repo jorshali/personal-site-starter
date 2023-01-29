@@ -17,7 +17,7 @@ To create the blog posts we use [`remark`](https://github.com/remarkjs/remark) a
 
 The site gets a near perfect [Lighthouse](https://developer.chrome.com/en/docs/lighthouse/) score so you can expect your site to be extremely performant.
 
-![Lighthouse Score](https://github.com/jorshali/personal-site-starter/tree/main/public/assets/images/lighthouse_score.png "Lighthouse score for https://jacoborshalick.me")
+![Lighthouse Score](https://raw.githubusercontent.com/jorshali/personal-site-starter/main/public/assets/images/lighthouse_score.png "Lighthouse score for https://jacoborshalick.me")
 
 ## Deploy with AWS Amplify
 
