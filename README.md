@@ -68,6 +68,10 @@ You can use the [aws-subscribers](https://github.com/jorshali/aws-subscribers) p
 
 [Start tracking subscribers in AWS in under 30 minutes](https://jacoborshalick.me/posts/build-a-subscriber-rest-api-on-aws-in-under-30-minutes)
 
+# Contributions welcome
+
+Whether you would like to enhance the site starter, or simply post a link to your site build with the starter, your contribution is welcome.  Simply submit a pull request.  To feature your site, simply add it to this README in your pull request.
+
 # Notes
 
 `personal-site-starter` uses [Tailwind CSS](https://tailwindcss.com) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3).
