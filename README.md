@@ -1,4 +1,16 @@
-# A statically generated personal site using Next.js, Markdown, and TypeScript
+# A statically generated portfolio site using Next.js, Markdown, and TypeScript
+
+The personal site starter creates a site that includes:
+
+- professional information
+- links to your online presence
+- ability to subscribe
+- blog posts with social sharing
+- responsiveness for mobile
+
+You can see a demo here:  
+
+[https://jacoborshalick.me](https://jacoborshalick.me/)
 
 This project incoporates aspects of the following templates:
 
@@ -49,6 +61,12 @@ npm run dev
 ```
 
 Your personal site should be up and running on [http://localhost:3000](http://localhost:3000)! If it doesn't work, post on [GitHub discussions](https://github.com/jorshali/personal-site-starter/discussions).
+
+# Enabling subcribers
+
+You can use the [aws-subscribers](https://github.com/jorshali/aws-subscribers) project to store subscribers in AWS.  You can find a tutorial to integrate the `aws-subscribers` project here:
+
+[Start tracking subscribers in AWS in under 30 minutes](https://jacoborshalick.me/posts/build-a-subscriber-rest-api-on-aws-in-under-30-minutes)
 
 # Notes
 
