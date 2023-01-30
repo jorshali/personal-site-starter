@@ -1,18 +1,18 @@
 ---
-title: 'Host a personal blog with Next.js and AWS in under 30 minutes '
+title: 'Host a personal blog with Next.js and AWS in under 30 minutes'
 excerpt: 'A tutorial where you can learn how to use Next.js with AWS while actually building something useful.'
 coverImage: '/assets/blog/nextjs-and-aws-amplify-host-a-personal-blog-in-under-30-minutes/sergio-capuzzimati-Ihml-Sigf6s-unsplash.jpg'
 coverImageAttribution: 'Photo by <a href="https://unsplash.com/@sergio_capuzzimati?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sergio Capuzzimati</a> on <a href="https://unsplash.com/photos/Ihml-Sigf6s?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'
-date: '2023-01-20T07:00:00.000Z'
+date: '2023-01-28T07:00:00.000Z'
 ogImage:
   url: '/assets/blog/nextjs-and-aws-amplify-host-a-personal-blog-in-under-30-minutes/sergio-capuzzimati-Ihml-Sigf6s-unsplash.jpg'
 ---
 
 We've all said it:
 
+- I want to setup a portfolio site
 - I want to learn Next.js
 - I want to try out AWS Amplify
-- I want to setup a personal site
 
 How can I do it all?
 
@@ -51,6 +51,11 @@ The application was built with [Next.js](https://nextjs.org) and [Tailwind](http
 
 - [blog-starter](https://github.com/vercel/next.js/tree/canary/examples/blog-starter)
 - [Next-JS-Landing-Page-Starter-Template](https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template)
+
+
+You can expect your site to be extremely performant.  My example site gets a near perfect Lighthouse score. 
+
+![lighthouse score](/assets/images/lighthouse_score.png "Near perfect Lighthouse score")
 
 Now let's get started.
 
@@ -163,4 +168,11 @@ If you run into any issues along the way, feel free to ask questions or post iss
 
 ## What's next?
 
-In the next post I'll be showing you how to add an AWS Lambda for saving subscribers.  Once that's complete, we'll register a domain and connect it through [Route 53](https://aws.amazon.com/route53/) in AWS so you can share your site with the world.
+In the following posts, I'll show you how to track subscribers in AWS and how to setup a custom domain:
+
+- [Start tracking your subscribers in AWS in under 30 minutes](https://jacoborshalick.me/posts/build-a-subscriber-rest-api-on-aws-in-under-30-minutes)
+- [Configure a custom domain for your AWS Amplify App](https://jacoborshalick.me/posts/configure-a-custom-domain-for-your-aws-amplify-app)
+
+Setting up subscribers is optional.  If you aren't ready for that just yet, you can disable subscribers in `src/lib/constants.ts`.  Simply set `SUBSCRIBE_ENABLED` to `false`.
+
+You can now register a custom domain and connect it through [Route 53](https://aws.amazon.com/route53/) in AWS.  That way you can share your new portfolio site with the world.

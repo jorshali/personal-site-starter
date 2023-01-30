@@ -12,7 +12,7 @@ import SectionSeparator from "../../components/SectionSeparator";
 import { SubscribeForm } from "../../components/SubscribeForm";
 import type PostType from "../../interfaces/post";
 import { getAllPosts, getPostBySlug } from "../../lib/api";
-import { HERO_SUBTITLE, SITE_NAME, SITE_URL } from "../../lib/constants";
+import { HERO_SUBTITLE, SITE_NAME, SITE_URL, SUBSCRIBE_ENABLED } from "../../lib/constants";
 import markdownToHtml from "../../lib/markdownToHtml";
 
 type Props = {
@@ -27,6 +27,21 @@ export default function Post({ post }: Props) {
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
   }
+
+  const renderSubscriberFooter = () => {
+    return (
+      <>
+        <SectionSeparator />
+
+        <div className="mt-8 mb-8 text-lg">
+          Want to know more? Subscribe! {HERO_SUBTITLE}
+        </div>
+        
+        <SubscribeForm />
+      </> 
+    );
+  };
+
   return (
     <Layout>
       <Container>
@@ -52,12 +67,7 @@ export default function Post({ post }: Props) {
                 />
                 <PostBody content={post.content} />
 
-                <SectionSeparator />
-
-                <div className="mt-8 mb-8 text-lg">
-                  Want to know more? Subscribe! {HERO_SUBTITLE}
-                </div>
-                <SubscribeForm />
+                { SUBSCRIBE_ENABLED ? renderSubscriberFooter() : null }
               </Section>
             </article>
           </>

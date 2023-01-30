@@ -7,6 +7,7 @@ The personal site starter creates a site that includes:
 - ability to subscribe
 - blog posts with social sharing
 - responsiveness for mobile
+- easy customization
 
 You can see a demo here:  
 
