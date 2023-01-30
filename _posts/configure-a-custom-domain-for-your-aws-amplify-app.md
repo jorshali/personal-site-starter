@@ -10,6 +10,8 @@ ogImage:
 
 You've created an AWS Amplify App and you're ready to share it with the world.  You need a custom domain.  AWS Amplify and Route 53 make it easy and this guide will step you through it!
 
+If you want your own portfolio site, start with my [tutorial to setup your portfolio site in AWS Amplify under 30 minutes](https://jacoborshalick.me/posts/nextjs-and-aws-amplify-host-a-personal-blog-in-under-30-minutes).
+
 ## Before you get started
 
 You'll need a few things. You may already have some of them:

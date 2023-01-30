@@ -103,7 +103,7 @@ On the next step, select the __Add user to group__ option and click the __Create
 
 You will now be taken back to the user permission options, but you will see your newly created __Administrator__ group.  Check the box to the left of your newly created group and select __Next__.
 
-![screenshot_3.png](/assets/blog/host-a-subscriber-rest-api-in-aws-in-under-30-minutes/screenshot_3.png "Apply ")
+![screenshot_3.png](/assets/blog/host-a-subscriber-rest-api-in-aws-in-under-30-minutes/screenshot_3.png "Make your new user an Administrator")
 
 This will take you to the __Review and Create__ screen.  Simply select __Create User__.
 
@@ -202,7 +202,7 @@ Open your site in your browser at [https://localhost:3000](https://localhost:300
 
 Now open your AWS console and search for __DynamoDB__.  Open it and in the left navigation select __Tables > Explore Items__.  Under __Tables__ select __SUBSCRIBER__.
 
-![screenshot_11.png](/assets/blog/host-a-subscriber-rest-api-in-aws-in-under-30-minutes/screenshot_11.png "Lambda console with subscriberFunction")
+![screenshot_11.png](/assets/blog/host-a-subscriber-rest-api-in-aws-in-under-30-minutes/screenshot_11.png "Entries in SUBSCRIBER table in DynamoDB")
 
 Here you will see an entry for your email address!
 
