@@ -68,6 +68,12 @@ You can use the [aws-subscribers](https://github.com/jorshali/aws-subscribers) p
 
 [Start tracking subscribers in AWS in under 30 minutes](https://jacoborshalick.me/posts/build-a-subscriber-rest-api-on-aws-in-under-30-minutes)
 
+# Using a custom domain
+
+It's easy to setup a custom domain with AWS Amplify.  You can find a tuotrial to setup your own custom domain here:
+
+[Configure a custom domain for your AWS Amplify App](https://jacoborshalick.me/posts/configure-a-custom-domain-for-your-aws-amplify-app)
+
 # Contributions welcome
 
 Contributions are certainly welcome!  Whether you would like to enhance the site starter, or feature your site that was built with the starter, simply submit a pull request.  To feature your site, simply add it to this README in the pull request.
