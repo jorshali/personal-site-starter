@@ -1,13 +1,13 @@
-import Meta from "./Meta";
+import Link from "next/link";
 
 import Alert from "../components/Alert";
 import { Background } from "../components/Background";
 import { Logo } from "../components/Logo";
 import { NavbarTwoColumns } from "../components/NavbarTwoColumns";
 import { Section } from "../components/Section";
-import { TemplateFooter } from "./TemplateFooter";
-import Link from "next/link";
+import Meta from "./Meta";
 import PoweredBy from "./PoweredBy";
+import { TemplateFooter } from "./TemplateFooter";
 
 type Props = {
   children: React.ReactNode;

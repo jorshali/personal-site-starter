@@ -3,7 +3,6 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 
 import Container from "../../components/Container";
-import Layout from "../../components/Layout";
 import PostBody from "../../components/PostBody";
 import PostHeader from "../../components/PostHeader";
 import PostTitle from "../../components/PostTitle";
@@ -12,7 +11,12 @@ import SectionSeparator from "../../components/SectionSeparator";
 import { SubscribeForm } from "../../components/SubscribeForm";
 import type PostType from "../../interfaces/post";
 import { getAllPosts, getPostBySlug } from "../../lib/api";
-import { HERO_SUBTITLE, SITE_NAME, SITE_URL, SUBSCRIBE_ENABLED } from "../../lib/constants";
+import {
+  HERO_SUBTITLE,
+  SITE_NAME,
+  SITE_URL,
+  SUBSCRIBE_ENABLED,
+} from "../../lib/constants";
 import markdownToHtml from "../../lib/markdownToHtml";
 
 type Props = {
@@ -36,9 +40,9 @@ export default function Post({ post }: Props) {
         <div className="mt-8 mb-8 text-lg">
           Want to know more? Subscribe! {HERO_SUBTITLE}
         </div>
-        
+
         <SubscribeForm />
-      </> 
+      </>
     );
   };
 
@@ -66,7 +70,7 @@ export default function Post({ post }: Props) {
               />
               <PostBody content={post.content} />
 
-              { SUBSCRIBE_ENABLED ? renderSubscriberFooter() : null }
+              {SUBSCRIBE_ENABLED ? renderSubscriberFooter() : null}
             </Section>
           </article>
         </>

@@ -1,10 +1,10 @@
 import "../styles/index.css";
 
 import { AppProps } from "next/app";
+
 import Layout from "../components/Layout";
 
-
-export default function MyApp({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps }: AppProps) {
   return (
     <Layout>
       <Component {...pageProps} />
