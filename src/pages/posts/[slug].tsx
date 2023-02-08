@@ -43,37 +43,35 @@ export default function Post({ post }: Props) {
   };
 
   return (
-    <Layout>
-      <Container>
-        {router.isFallback ? (
-          <PostTitle>Loading…</PostTitle>
-        ) : (
-          <>
-            <article className="mb-8">
-              <Head>
-                <title>{post.title + " | " + SITE_NAME}</title>
-                <meta property="og:image" content={post.ogImage.url} />
-                <meta property="og:title" content={post.title} />
-                <meta property="og:description" content={post.excerpt} />
-              </Head>
-              <Section>
-                <PostHeader
-                  shareUrl={SITE_URL + "/posts/" + post.slug}
-                  title={post.title}
-                  subtitle={post.excerpt}
-                  coverImage={post.coverImage}
-                  coverImageAttribution={post.coverImageAttribution}
-                  date={post.date}
-                />
-                <PostBody content={post.content} />
+    <Container>
+      {router.isFallback ? (
+        <PostTitle>Loading…</PostTitle>
+      ) : (
+        <>
+          <article className="mb-8">
+            <Head>
+              <title>{post.title + " | " + SITE_NAME}</title>
+              <meta property="og:image" content={post.ogImage.url} />
+              <meta property="og:title" content={post.title} />
+              <meta property="og:description" content={post.excerpt} />
+            </Head>
+            <Section>
+              <PostHeader
+                shareUrl={SITE_URL + "/posts/" + post.slug}
+                title={post.title}
+                subtitle={post.excerpt}
+                coverImage={post.coverImage}
+                coverImageAttribution={post.coverImageAttribution}
+                date={post.date}
+              />
+              <PostBody content={post.content} />
 
-                { SUBSCRIBE_ENABLED ? renderSubscriberFooter() : null }
-              </Section>
-            </article>
-          </>
-        )}
-      </Container>
-    </Layout>
+              { SUBSCRIBE_ENABLED ? renderSubscriberFooter() : null }
+            </Section>
+          </article>
+        </>
+      )}
+    </Container>
   );
 }
 

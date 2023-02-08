@@ -4,7 +4,7 @@ const PoweredBy = () => {
   return (
     <div className="bg-neutral-500 border-neutral-500 text-white">
       <Container>
-        <div className="py-2 text-center text-sm mb-4">
+        <div className="py-2 text-center text-sm">
           {/*
            * PLEASE READ THIS SECTION
            * I would really appreciate it if you could keep the link to the tutorial
